@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "operaciones.h"
 // global variable declaration
 int a=1, b=2, c=3;
 void printGlobalVariables()
@@ -9,14 +10,13 @@ void printGlobalVariables()
 
 int main()
 {
-    printf ("GLOBAL value of a = %d, b = %d and c = %d\n",a,b,c);
-    // local variable declaration
-    int a, b, c;
-    // actual initialization
-    a = 10;
-    b = 20;
-    c = a + b;
-    printf ("LOCAL value of a = %d, b = %d and c = %d\n",a,b,c);
-    printGlobalVariables();
+    int num1, num2;
+
+    printf("num1\n");
+    scanf("%d", &num1);
+    printf("num2\n");
+    scanf("%d", &num2);
+
+    printf("Suma: %d", Suma(num1,num2));
     return 0;
 }
